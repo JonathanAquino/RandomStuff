@@ -90,6 +90,19 @@
             align-items: flex-end;
         }
 
+        .controls-hint {
+            text-align: center;
+            font-size: 10px;
+            color: #ccc;
+            text-shadow: 1px 1px 0 #000;
+            line-height: 1.6;
+            padding-bottom: 2px;
+        }
+
+        @media (max-width: 800px) {
+            .controls-hint { display: none; }
+        }
+
         .speedometer {
             font-size: 24px;
             color: #fff;
@@ -223,6 +236,10 @@
             <div class="gear-box">
                 <div id="gear-low" class="gear-inactive">LOW</div>
                 <div id="gear-high" class="gear-active">HIGH</div>
+            </div>
+            <div class="controls-hint">
+                STEER: ARROWS<br>
+                GAS: Z / BRAKE: DOWN
             </div>
             <div class="speedometer"><span id="speed" class="speed-val">0</span> km/h</div>
         </div>
